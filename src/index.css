@@ -1,0 +1,21 @@
+:root {
+  --color-primario: #ec809e;
+  --color-secundario: #f2e2e0;
+  --color-fondo: #fff;
+  --color-texto: #2E2E2E;
+}
+
+
+/* { Comida
+  --color-primario: #ff822e;
+  --color-secundario: #fff;
+  --color-fondo: #fff;
+  --color-texto: #000000;
+}
+
+/* { Boutique 
+  --color-primario: #ec809e;
+  --color-secundario: #f2e2e0;
+  --color-fondo: #fff;
+  --color-texto: #000000;
+}

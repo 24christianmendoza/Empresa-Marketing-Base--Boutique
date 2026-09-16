@@ -1,0 +1,113 @@
+.mas-vendido {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--color-primario);
+}
+
+.titulo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+/* Estilo base para cards */
+.cards {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.cards::-webkit-scrollbar-track {
+  background: var(--color-primario);
+}
+
+.card {
+  flex: 0 0 auto; /* ancho fijo para scroll */
+  background: var(--color-secundario);
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  width: 400px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 12px rgba(0,0,0,0.15);
+}
+
+.card .imagen img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card .descripcion {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-texto);
+}
+
+.card .precio {
+  font-weight: bold;
+  color: var(--color-primario);
+  font-size: 1.3rem;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+  .cards {
+    justify-content: flex-start; /* en móvil, alineadas a la izquierda */
+  }
+}
+
+@media (min-width: 769px) {
+  .cards {
+    justify-content: center; /* en PC, centradas */
+    overflow-x: visible;     /* en PC no se necesita scroll */
+  }
+}
+
+/* Modal responsivo */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.modal-contenido {
+  background: var(--color-secundario);
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 95%;
+  max-height: 95%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.modal-contenido img {
+  max-width: 100%;
+  max-height: 80vh; /* ocupa gran parte de la pantalla */
+  object-fit: contain;
+  border-radius: 8px;
+}
