@@ -49,7 +49,7 @@ export default function MenuProductosSheets() {
 
     return (
         <section className="menuSheetsProductos">
-            <h2 className="menuSheetsProductos-titulo">Productos</h2>
+            <h2 id="productos" className="menuSheetsProductos-titulo">Productos</h2>
 
             <div className="menuSheetsProductos-controles">
                 <div className="menuSheetsProductos-filtros">

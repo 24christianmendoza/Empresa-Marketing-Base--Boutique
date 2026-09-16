@@ -19,7 +19,7 @@ export default function Header() {
 
         <ul className={menuOpen ? "active" : ""}>
           <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#menu">MENU</a></li>
+          <li><a href="#productos">PRODUCTOS</a></li>
           <li><a href="#ubicaciones">UBICACIONES</a></li>
         </ul>
       </nav>
